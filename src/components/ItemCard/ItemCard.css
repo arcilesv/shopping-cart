@@ -1,0 +1,192 @@
+* {
+    box-sizing: content-box;
+    margin: 0;
+    padding: 0;
+}
+
+.product-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    width: 250px;
+    padding: 20px;
+    background: white;
+    margin: 10px 10px;
+    border: 1px solid #B2B1B9;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+    transition: all 0.3s;
+   }
+
+.product-card:hover {
+    box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+   }
+
+.photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    margin-bottom: 10px;
+}
+    
+.photo img { 
+    max-height: 150px;
+    max-width: 150px;
+}
+
+.description {     
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+   }
+
+.description h1 {
+    color: #000;
+    font-weight: bold;
+    margin: 0;
+    font-size: 16px;
+    margin-bottom: 10px;
+   }
+
+.description h2 {
+    color: #515151;
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: 500;
+   }
+
+.description h4 { 
+    margin: 0;
+    color: #000;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    font-size: 12px;
+    margin-bottom: 10px;
+   }
+
+.description p { 
+    font-size: 12px;
+    color: #000;
+    line-height: 20px;
+    margin: 0;
+}
+
+.button-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* .btn-add, .btn-whish { */
+.btn-primary{
+    outline: 0;
+    border: 0;
+    border-radius: 5px;
+    background: none;
+    border: 2px solid #1565C0;
+    padding: 8px 0px;
+    color: #1565C0;
+    text-transform: uppercase;
+    width: 90px;
+    font-family: inherit;
+    margin-right: 5px;
+    transition: all 0.5s ease;
+    font-weight: 500;
+    font-size: 12px;      
+}
+
+/* .btn-add:hover , .btn-whish:hover { */
+.btn-primary:hover{
+    background: #1565C0;
+    border: 2px solid #1565C0;
+    color: #fff;
+    transform: scale(1.06);
+    cursor: pointer;
+}
+
+.btn-disable {
+    outline: 0;
+    border: 0;
+    border-radius: 5px;
+    background: #EFEFEF;
+    border: 2px solid #686D76;
+    padding: 8px 0px;
+    color: #686D76;
+    text-transform: uppercase;
+    width: 90px;
+    font-family: inherit;
+    margin-right: 5px;
+    transition: all 0.5s ease;
+    font-weight: 500;
+    font-size: 12px;   
+}
+
+.out-stock {
+    top: 2em;
+    left: 0em;
+    color: #fff;
+    display: block;
+    position:absolute;
+    text-align: center;
+    text-decoration: none;
+    letter-spacing: .06em;
+    background-color: #A00;
+    padding: 0.5em 1em 0.4em 1em;
+    text-shadow: 0 0 0.75em #444;
+    box-shadow: 0 0 0.5em rgba(0,0,0,0.5);
+    font: bold 16px/1.2em Arial, Sans-Serif;
+    text-shadow: 0 0 0.75em #444;
+    box-shadow: 0 0 0.5em rgba(0,0,0,0.5);
+    transform: rotate(-45deg) scale(0.75,1);
+    z-index:2;
+}
+.out-stock:before {
+    content: '';
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    margin: -0.3em -1em;
+    transform: scale(0.7);
+    -webkit-transform: scale(0.7);
+    border: 2px rgba(255,255,255,0.7) dashed;
+}
+
+.wish-item {
+    top: 2em;
+    right: 0em;
+    color: #fff;
+    display: block;
+    position:absolute;
+    text-align: center;
+    text-decoration: none;
+    letter-spacing: .06em;
+    background-color: #FFB344;
+    padding: 0.5em 1em 0.4em 1em;
+    text-shadow: 0 0 0.75em #444;
+    box-shadow: 0 0 0.5em rgba(0,0,0,0.5);
+    font: bold 16px/1.2em Arial, Sans-Serif;
+    text-shadow: 0 0 0.75em #444;
+    box-shadow: 0 0 0.5em rgba(0,0,0,0.5);
+    transform: rotate(45deg) scale(0.75,1);
+    z-index:2;
+}
+
+.wish-item:before{
+    content: '';
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    margin: -0.3em -1em;
+    transform: scale(0.7);
+    -webkit-transform: scale(0.7);
+    border: 2px rgba(255,255,255,0.7) dashed;
+}
